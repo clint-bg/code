@@ -1,0 +1,105 @@
+[Air Flow Meters]
+Air Flow Meters = "CB217A-Peter"
+
+[Ambient Conditions]
+Ambient Conditions = "CB217A-Maggie"
+
+[Batch Distillation Column]
+Batch Distillation Column = "CB217A-Bill"
+
+[Catalytic Methanation #1]
+Catalytic Methanation #1 = "CB217A-Nancy"
+
+[Catalytic Methanation #2]
+Catalytic Methanation #2 = "CB217A-Mary"
+
+[Choked Flow]
+Choked Flow = "CB217A-Bart"
+
+[Compressibility]
+Compressibility = "CB217A-Moe"
+
+[Concentric Tube Heat Exchanger]
+Concentric Tube Heat Exchanger = "CB217A-Athos"
+
+[Continuous Distillation Column]
+Continuous Distillation Column = "CB217A-George"
+
+[Distillation Column #2]
+Distillation Column #2 = "CB217A-Taylor"
+
+[Distillation Column #3]
+Distillation Column #3 = "CB217A-Burton"
+
+[Dye Fading]
+Dye Fading = "CB217A-Aramis"
+
+[Experiment #5]
+Experiment #5 = "CB217A-Curley"
+
+[Experiment 5]
+Experiment 5 = "CB217A-Curley"
+
+[Finned Tube Heat Exchanger (master)]
+Finned Tube Heat Exchanger (master) = "CB217A-Jill"
+
+[Finned Tube Heat Exchanger (slave)]
+Finned Tube Heat Exchanger (slave) = "CB217A-Jack"
+
+[Fluids #1]
+Fluids #1 = "CB217A-Charles"
+
+[Fluids #2]
+Fluids #2 = "CB217A-Diana"
+
+[Fluids #3]
+Fluids #3 = "CB217A-Ricky"
+
+[Fluids #4]
+Fluids #4 = "CB217A-Lucy"
+
+[Fuel Cell]
+Fuel Cell = "CB217A-Larry"
+
+[Fuel Cell (CB217A-Larry)]
+Fuel Cell (CB217A-Larry) = "10.8.112.26"
+
+[Gas/Liquid Absorbtion Column]
+Gas/Liquid Absorbtion Column = "cb217a-ted.et.byu.edu"
+
+[Gas/Liquid Absorption Column]
+Gas/Liquid Absorption Column = "CB217A-Ted"
+
+[Heated Rods]
+Heated Rods = "CB217A-Ronald"
+
+[Liquid-Liquid Extraction Column]
+Liquid-Liquid Extraction Column = "CB217A-Porthos"
+
+[My Computer]
+My Computer = "10.37.39.7"
+
+[Pipe Viscometer #1]
+Pipe Viscometer #1 = "CB217A-Gracie"
+
+[Pipe Viscometer #2]
+Pipe Viscometer #2 = "CB217A-Paul"
+
+[Refrigeration #1]
+Refrigeration #1 = "CB217A-Lisa"
+
+[Refrigeration #2]
+Refrigeration #2 = "CB217A-Homer"
+
+[Shell and Tube Heat Exchanger Unit #1]
+Shell and Tube Heat Exchanger Unit #1 = "CB217A-Tom"
+
+[Shell and Tube Heat Exchanger Unit #2]
+Shell and Tube Heat Exchanger Unit #2 = "CB217A-Jerry"
+
+[Shell and Tube Heat Exchanger Unit #3]
+Shell and Tube Heat Exchanger Unit #3 = "CB217A-Jack"
+
+[Wetted Wall Column]
+Wetted Wall Column = "CB217A-Marge"
+

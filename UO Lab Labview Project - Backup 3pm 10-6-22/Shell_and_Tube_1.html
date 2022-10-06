@@ -1,0 +1,48 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Draft//EN">
+<HTML>
+<HEAD>
+<Script Language="JavaScript">
+var userAgent = navigator.userAgent;
+var versionOffset = userAgent.indexOf("Chrome");
+
+if (versionOffset != -1)
+{
+    var fullVersion = userAgent.substring(versionOffset+7);
+    var majorVersion = parseInt(''+fullVersion,10);
+    if (majorVersion >= 42)
+    {
+	var plugins = navigator.plugins;
+	var hasNIPlugin = false;
+	for (var i = 0; i < plugins.length; i++) {
+		if (plugins[i].name.indexOf("National Instruments") != -1) {
+			hasNIPlugin = true;
+		}
+	}
+	if (hasNIPlugin == false) {
+        	document.write('<strong><em>NI has detected that your ' +
+                               'browser might be blocking a plug-in.  '+
+                               'Visit ni.com/info and enter the following '+
+                               'Info Code for more information: '+
+                               'BlockedPlugin</em></strong>')
+	}
+    }
+}
+</Script>
+<TITLE>Shell and Tube Heat Exchanger #1 (South)</TITLE>
+</HEAD>
+<BODY >
+<H1>Shell and Tube Heat Exchanger #1 (South)</H1>
+<P>
+<TABLE BORDER=1 BORDERCOLOR = #000000><TR><TD>
+<OBJECT ID="LabVIEWControl" CLASSID="CLSID:A40B0AD4-B50E-4E58-8A1D-8544233807B9" WIDTH=785 HEIGHT=1012 CODEBASE="ftp://ftp.ni.com/support/labview/runtime/windows/2017/LVRTE2017min.exe">
+<PARAM name="LVFPPVINAME" value="UO Lab Setup.lvproj/EDIT__Shell and Tube Heat Exchanger Unit #1__{C7729425-E0AB-4E4D-85EF-1C41853D3361}/Shell and Tube Heat Exchanger.vi">
+<PARAM name="REQCTRL" value=false>
+<EMBED SRC=".LV_FrontPanelProtocol.rpvi170" LVFPPVINAME="UO Lab Setup.lvproj/EDIT__Shell and Tube Heat Exchanger Unit #1__{C7729425-E0AB-4E4D-85EF-1C41853D3361}/Shell and Tube Heat Exchanger.vi" REQCTRL=false TYPE="application/x-labviewrpvi170" WIDTH=785 HEIGHT=1012  PLUGINSPAGE="http://digital.ni.com/express.nsf/bycode/exck2m">
+</EMBED>
+</OBJECT>
+</TD></TR></TABLE>
+<a href="data.csv">Get Data File (.csv)</a><br/>
+<P>
+
+</BODY>
+</HTML>

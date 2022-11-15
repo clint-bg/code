@@ -58,7 +58,7 @@
 	<Property Name="varPersistentID:{1A6FE414-8B47-40FF-83C0-73384BDB599B}" Type="Ref">/Continuous Distillation Column/Chassis/Real-Time Scan Resources/Mod2/Approx Bottoms Composition</Property>
 	<Property Name="varPersistentID:{1C275F8A-9F8C-48CC-BCE4-2D78D02C19FD}" Type="Ref">/Fluids #3/Chassis/Real-Time Scan Resources/Mod5/CTR2</Property>
 	<Property Name="varPersistentID:{1C59A2CC-93D2-467F-A8C1-28530D42FB61}" Type="Ref">/Fluids #4/Chassis/Real-Time Scan Resources/Mod5/CTR5</Property>
-	<Property Name="varPersistentID:{1CD382BA-C56F-4E51-87DD-55D3A86BEEB4}" Type="Ref">/Catalytic Methanation #1/Chassis/Real-Time Scan Resources/Mod1/CH2</Property>
+	<Property Name="varPersistentID:{1CD382BA-C56F-4E51-87DD-55D3A86BEEB4}" Type="Ref">/Catalytic Methanation #1/Chassis/Real-Time Scan Resources/Mod1/Heater Temperature</Property>
 	<Property Name="varPersistentID:{1E36B52D-603C-4422-B3BD-E9CEED5119B4}" Type="Ref">/Ambient Conditions/Chassis/Real-Time Scan Resources/Mod1/CH2</Property>
 	<Property Name="varPersistentID:{1E54D152-D816-4E73-A41B-96FF2A22456F}" Type="Ref">/Shell and Tube Heat Exchanger Unit #1/Chassis/Real-Time Scan Resources/Mod3/AO3</Property>
 	<Property Name="varPersistentID:{1E8670BF-5B02-4FEF-AA3E-5976D64A684F}" Type="Ref">/Fluids #3/Chassis/Real-Time Scan Resources/Mod1/Pump Speed</Property>
@@ -223,7 +223,7 @@
 	<Property Name="varPersistentID:{80F637C4-DDF9-4F9E-A0BE-6D1B61D0073F}" Type="Ref">/Shell and Tube Heat Exchanger Unit #2/Chassis/Real-Time Scan Resources/Mod1/Outlet Water Temperature</Property>
 	<Property Name="varPersistentID:{81A0298B-1C8F-444A-B996-6A0F07DA8EB1}" Type="Ref">/Catalytic Methanation #2/Chassis/Real-Time Scan Resources/Mod5/DO6</Property>
 	<Property Name="varPersistentID:{8233D50A-8612-42AB-92AE-110047676380}" Type="Ref">/Continuous Distillation Column/Chassis/Real-Time Scan Resources/Mod1/Reboiler Temperature</Property>
-	<Property Name="varPersistentID:{8383342C-2228-43C7-A70A-3AD404A109E6}" Type="Ref">/Catalytic Methanation #2/Chassis/Real-Time Scan Resources/Mod1/CH2</Property>
+	<Property Name="varPersistentID:{8383342C-2228-43C7-A70A-3AD404A109E6}" Type="Ref">/Catalytic Methanation #2/Chassis/Real-Time Scan Resources/Mod1/Heater Temperature</Property>
 	<Property Name="varPersistentID:{83A1D320-B6F1-4BD7-B0F5-BF76432DB0F7}" Type="Ref">/Refrigeration #2/Chassis/Real-Time Scan Resources/Mod1/AI7</Property>
 	<Property Name="varPersistentID:{84D06DF7-9222-46F8-B554-255901AA1A39}" Type="Ref">/Pipe Viscometer #1/Chassis/Real-Time Scan Resources/Mod1/Pressure Drop (large pipe)</Property>
 	<Property Name="varPersistentID:{8558DB23-4062-4A0B-98AB-4CCDF0FCD913}" Type="Ref">/Gas\/Liquid Absorption Column/Chassis/Real-Time Scan Resources/Mod2/Column 1 Level</Property>
@@ -1907,6 +1907,9 @@ DirectoryIndex index.htm
 					<Property Name="crio.Calibration" Type="Str">1</Property>
 					<Property Name="crio.Location" Type="Str">Slot 1</Property>
 					<Property Name="crio.RequiresValidation" Type="Bool">false</Property>
+					<Property Name="crio.SDcounterSlaveChannelMask" Type="Str">0</Property>
+					<Property Name="crio.SDCounterSlaveMasterSlot" Type="Str">0</Property>
+					<Property Name="crio.SDInputFilter" Type="Str">128</Property>
 					<Property Name="crio.SupportsDynamicRes" Type="Bool">true</Property>
 					<Property Name="crio.Type" Type="Str">NI 9219</Property>
 					<Property Name="cRIOModule.CH0.DegreeRange" Type="Str">2</Property>
@@ -1920,14 +1923,14 @@ DirectoryIndex index.htm
 					<Property Name="cRIOModule.CH0.TCoupleType" Type="Str">0</Property>
 					<Property Name="cRIOModule.CH0.ThresHold" Type="Str">1.500000E+0</Property>
 					<Property Name="cRIOModule.CH1.DegreeRange" Type="Str">2</Property>
-					<Property Name="cRIOModule.CH1.Mode" Type="Str">0</Property>
+					<Property Name="cRIOModule.CH1.Mode" Type="Str">4</Property>
 					<Property Name="cRIOModule.CH1.Range" Type="Str">0</Property>
 					<Property Name="cRIOModule.CH1.RTD_A" Type="Str">3.908300E-3</Property>
 					<Property Name="cRIOModule.CH1.RTD_B" Type="Str">-5.775000E-7</Property>
 					<Property Name="cRIOModule.CH1.RTD_C" Type="Str">-4.183000E-12</Property>
 					<Property Name="cRIOModule.CH1.RTD_Ro" Type="Str">1.000000E+2</Property>
 					<Property Name="cRIOModule.CH1.RTDType" Type="Str">1</Property>
-					<Property Name="cRIOModule.CH1.TCoupleType" Type="Str">0</Property>
+					<Property Name="cRIOModule.CH1.TCoupleType" Type="Str">1</Property>
 					<Property Name="cRIOModule.CH1.ThresHold" Type="Str">1.500000E+0</Property>
 					<Property Name="cRIOModule.CH2.DegreeRange" Type="Str">2</Property>
 					<Property Name="cRIOModule.CH2.Mode" Type="Str">0</Property>
@@ -1950,6 +1953,7 @@ DirectoryIndex index.htm
 					<Property Name="cRIOModule.CH3.TCoupleType" Type="Str">0</Property>
 					<Property Name="cRIOModule.CH3.ThresHold" Type="Str">1.500000E+0</Property>
 					<Property Name="cRIOModule.Conversion Time" Type="Str">0</Property>
+					<Property Name="cRIOModule.DigitalIOMode" Type="Str">0</Property>
 					<Property Name="cRIOModule.EnableSpecialtyDigital" Type="Str">false</Property>
 					<Property Name="cRIOModule.TEDSSupport" Type="Str">true</Property>
 					<Item Name="Reboiler Pressure" Type="Variable">
@@ -2588,14 +2592,14 @@ DirectoryIndex index.htm
 					<Property Name="cRIOModule.CH1.TCoupleType" Type="Str">0</Property>
 					<Property Name="cRIOModule.CH1.ThresHold" Type="Str">1.500000E+0</Property>
 					<Property Name="cRIOModule.CH2.DegreeRange" Type="Str">2</Property>
-					<Property Name="cRIOModule.CH2.Mode" Type="Str">1</Property>
+					<Property Name="cRIOModule.CH2.Mode" Type="Str">4</Property>
 					<Property Name="cRIOModule.CH2.Range" Type="Str">0</Property>
 					<Property Name="cRIOModule.CH2.RTD_A" Type="Str">3.908300E-3</Property>
 					<Property Name="cRIOModule.CH2.RTD_B" Type="Str">-5.775000E-7</Property>
 					<Property Name="cRIOModule.CH2.RTD_C" Type="Str">-4.183000E-12</Property>
 					<Property Name="cRIOModule.CH2.RTD_Ro" Type="Str">1.000000E+2</Property>
 					<Property Name="cRIOModule.CH2.RTDType" Type="Str">1</Property>
-					<Property Name="cRIOModule.CH2.TCoupleType" Type="Str">0</Property>
+					<Property Name="cRIOModule.CH2.TCoupleType" Type="Str">1</Property>
 					<Property Name="cRIOModule.CH2.ThresHold" Type="Str">1.500000E+0</Property>
 					<Property Name="cRIOModule.CH3.DegreeRange" Type="Str">2</Property>
 					<Property Name="cRIOModule.CH3.Mode" Type="Str">1</Property>
@@ -2648,7 +2652,7 @@ DirectoryIndex index.htm
 						<Property Name="type" Type="Str">Industrial</Property>
 						<Property Name="typeDesc" Type="Bin">*1!!!"=!A!!!!!!"!!V!#A!'2'^V9GRF!!!"!!!!!!!!!!!!!!!!!!!</Property>
 					</Item>
-					<Item Name="CH2" Type="Variable">
+					<Item Name="Heater Temperature" Type="Variable">
 						<Property Name="featurePacks" Type="Str">Industrial</Property>
 						<Property Name="Industrial:ChannelIndex" Type="Str">2</Property>
 						<Property Name="Industrial:EnableTimestamp" Type="Str">False</Property>
@@ -3201,7 +3205,7 @@ DirectoryIndex index.htm
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{40F3D2ED-5AFE-4983-827D-4693BC2D48A5}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/c/ni-rt/startup</Property>
-				<Property Name="Bld_version.build" Type="Int">48</Property>
+				<Property Name="Bld_version.build" Type="Int">56</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">startup.rtexe</Property>
 				<Property Name="Destination[0].path" Type="Path">/c/ni-rt/startup/startup.rtexe</Property>
@@ -3372,14 +3376,14 @@ DirectoryIndex index.htm
 					<Property Name="cRIOModule.CH1.TCoupleType" Type="Str">0</Property>
 					<Property Name="cRIOModule.CH1.ThresHold" Type="Str">1.500000E+0</Property>
 					<Property Name="cRIOModule.CH2.DegreeRange" Type="Str">2</Property>
-					<Property Name="cRIOModule.CH2.Mode" Type="Str">1</Property>
+					<Property Name="cRIOModule.CH2.Mode" Type="Str">4</Property>
 					<Property Name="cRIOModule.CH2.Range" Type="Str">0</Property>
 					<Property Name="cRIOModule.CH2.RTD_A" Type="Str">3.908300E-3</Property>
 					<Property Name="cRIOModule.CH2.RTD_B" Type="Str">-5.775000E-7</Property>
 					<Property Name="cRIOModule.CH2.RTD_C" Type="Str">-4.183000E-12</Property>
 					<Property Name="cRIOModule.CH2.RTD_Ro" Type="Str">1.000000E+2</Property>
 					<Property Name="cRIOModule.CH2.RTDType" Type="Str">1</Property>
-					<Property Name="cRIOModule.CH2.TCoupleType" Type="Str">0</Property>
+					<Property Name="cRIOModule.CH2.TCoupleType" Type="Str">1</Property>
 					<Property Name="cRIOModule.CH2.ThresHold" Type="Str">1.500000E+0</Property>
 					<Property Name="cRIOModule.CH3.DegreeRange" Type="Str">2</Property>
 					<Property Name="cRIOModule.CH3.Mode" Type="Str">1</Property>
@@ -3432,7 +3436,7 @@ DirectoryIndex index.htm
 						<Property Name="type" Type="Str">Industrial</Property>
 						<Property Name="typeDesc" Type="Bin">*1!!!"=!A!!!!!!"!!V!#A!'2'^V9GRF!!!"!!!!!!!!!!!!!!!!!!!</Property>
 					</Item>
-					<Item Name="CH2" Type="Variable">
+					<Item Name="Heater Temperature" Type="Variable">
 						<Property Name="featurePacks" Type="Str">Industrial</Property>
 						<Property Name="Industrial:ChannelIndex" Type="Str">2</Property>
 						<Property Name="Industrial:EnableTimestamp" Type="Str">False</Property>
@@ -3961,7 +3965,7 @@ DirectoryIndex index.htm
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{BEBF389B-A3DC-4FD9-B3AD-9824F8EAAA08}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/c/ni-rt/startup</Property>
-				<Property Name="Bld_version.build" Type="Int">22</Property>
+				<Property Name="Bld_version.build" Type="Int">26</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">startup.rtexe</Property>
 				<Property Name="Destination[0].path" Type="Path">/c/ni-rt/startup/startup.rtexe</Property>
